@@ -22,7 +22,7 @@
       <tr *ngFor="let customer of customersList; let i = index">
         <td class="align-middle text-center">{{i+1}}</td>
         <td class="align-middle">{{customer.id}}</td>
-        <td class="align-middle">{{customer.firstName}}</td>
+      <td><a routerLink="#" (click)="detail(customer)">{{customer.firstName}}</a></td>
         <td class="align-middle">{{customer.lastName}}</td>
         <td><a class="btn btn-info" (click)="edit(customer)">Edit</a></td>
         <td><a class="btn btn-danger" (click)="delete(customer)">Delete</a></td>

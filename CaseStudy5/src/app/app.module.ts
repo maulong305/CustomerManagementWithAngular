@@ -17,7 +17,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CreateComponent,
     EditComponent,
     DeleteComponent,
-    ListComponent
+    ListComponent,
   ],
   imports: [
     BrowserModule,
