@@ -1,0 +1,24 @@
+<div class="container">
+    <h2 style="color: orangered; text-align: center" class="col col-12">Delete customer</h2>
+    <table class="table table-light table-striped table-bordered table-hover">
+      <tr>
+        <th scope="row" class="w-25">First Name:</th>
+        <td class="w-75">{{customer.firstName}}</td>
+      </tr>
+
+      <tr>
+        <th scope="row" class="w-25">Last Name:</th>
+        <td class="w-75">{{customer.lastName}}</td>
+      </tr>
+      
+    </table>
+    <div class="row">
+      <div class="col col-3"></div>
+      <div class="col col-3">
+        <button class="btn btn-block btn-danger" (click)="deleteCus()">Delete customer</button>
+      </div>
+      <div class="col col-3">
+        <button class="btn btn-block btn-success" routerLink="/">Back</button>
+      </div>
+    </div>
+  </div>
