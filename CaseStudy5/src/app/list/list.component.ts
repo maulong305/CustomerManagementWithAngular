@@ -38,4 +38,9 @@ export class ListComponent implements OnInit {
    this.router.navigate(["/edit"])
   }
 
+  detail(customer: ICustomer){
+    this.customerService.setCustomer(customer);
+    this.router.navigate(["/detail"])
+  }
+
 }
